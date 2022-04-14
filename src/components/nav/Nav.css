@@ -1,0 +1,68 @@
+nav {
+    background: rgba(141, 137, 134, 0.6);
+    width: max-content;
+    height: max-content;
+    padding: 0.2rem 1.5rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    background: no-repeat;
+    padding: 0.2rem;
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    font-size: 32px;
+}
+
+nav a.active {
+    background: goldenrod;
+    border-radius: 50%;
+    height: 20%;
+    color: var(--color-white);
+}
+
+.home {
+    background: no-repeat;
+}
+
+.about {
+    background: no-repeat;
+}
+
+.education {
+    background: no-repeat;
+}
+
+.skills {
+    background: no-repeat;
+}
+
+.portfolio {
+    background: none;
+}
+
+
+/* ==============media query===================================================== */
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+}
+
+
+/* .skills {
+    background: none;
+} */

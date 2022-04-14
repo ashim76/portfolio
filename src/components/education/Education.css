@@ -1,0 +1,114 @@
+.section__container {
+    margin: 0;
+    padding: 0;
+    background: black;
+    box-sizing: border-box;
+}
+
+.education__top {
+    color: tomato;
+}
+
+.education__text {
+    margin-left: 43rem;
+    background: none;
+    color: #fff;
+    text-shadow: 0 0 5px rgb(3, 52, 131), 0 0 10px rgb(10, 86, 185), 0 0 15px rgb(1, 11, 89), 0 0 20px #089cd6, 0 0 30px #089cd6, 0 0 40px #089cd6, 0 0 55px #fdfffc, 0 0 75px #0f3d53;
+}
+
+.education__text:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50rem;
+    height: 3px;
+    left: 20rem;
+    margin: 10px;
+    background: black;
+    color: rgba(221, 189, 8, 0.719);
+    border: 10px dotted;
+    border-radius: 8px;
+    animation-name: coloring;
+    animation-duration: 100ms linear infinite;
+}
+
+@keyframes coloring {
+    0% {
+        transition: ease-in;
+        color: blue;
+    }
+    50% {
+        transition: ease-in;
+        color: red;
+    }
+    100% {
+        transition: ease-in;
+        color: green;
+    }
+}
+
+.education__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10rem;
+    padding-bottom: 1rem;
+    margin: 12rem;
+}
+
+.education__cards:after {
+    content: "";
+    font-size: 50px;
+    display: block;
+    position: relative;
+    width: 18rem;
+    height: 3px;
+    bottom: -6rem;
+    left: 20rem;
+    background: goldenrod;
+    color: black;
+    border: 10px solid;
+    border-radius: 70%;
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+        background: rgb(58, 58, 207);
+        color: black;
+    }
+    100% {
+        transform: rotate(360deg);
+        background: brown;
+        color: black;
+    }
+}
+
+.education__card {
+    border: 2px solid goldenrod;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.education__icon {
+    background: no-repeat;
+    font-size: 32px;
+}
+
+.first__card {
+    position: absolute;
+    left: 20px;
+    border-radius: 70% 60% 70% 70%;
+}
+
+.second__card {
+    position: absolute;
+    left: 76%;
+}
+
+
+/* ==========================Media Query =================================== */

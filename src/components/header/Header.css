@@ -1,0 +1,133 @@
+header {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    position: absolute;
+    top: 1rem;
+    left: 40rem;
+    background: no-repeat;
+}
+
+
+/* =================header socials=============================== */
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: absolute;
+    left: 3rem;
+    bottom: 2rem;
+    background: no-repeat;
+}
+
+.header__socials::after {
+    content: "";
+    width: 3px;
+    height: 12rem;
+    background: rgb(221, 138, 4);
+}
+
+.header__socials::before {
+    content: "";
+    width: 3px;
+    height: 10rem;
+    background: rgb(221, 189, 4);
+}
+
+.header__socials {
+    display: flex;
+    background: no-repeat;
+}
+
+
+/*=================================== Get in Touch========================== */
+
+.git {
+    display: flex;
+    gap: 20px;
+    margin: 3rem;
+    position: absolute;
+    top: 15rem;
+    left: 35rem;
+    background: none;
+}
+
+
+/*=================================== Scroll down========================== */
+
+.scroll__down {
+    background: no-repeat;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 35rem;
+    left: 89rem;
+    color: grey;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* ==============media query===================================================== */
+
+@media screen and (max-width: 1400px) {
+    header {
+        width: max-content;
+        height: max-content;
+    }
+    video {
+        width: fit-content;
+        height: fit-content;
+    }
+    .header-content {
+        margin-left: 10rem;
+        margin-bottom: 25rem;
+    }
+    .git a {
+        margin-top: 20rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: max-content;
+        height: min-content;
+        /* overflow: hidden; */
+    }
+    video {
+        width: fit-content;
+        height: fit-content;
+    }
+    .header-content,
+    .text-light {
+        width: 25rem;
+        margin: 0px -416px 37px -400px;
+        top: 20%;
+    }
+    .text-light {
+        margin-top: 30px;
+        right: 10px;
+    }
+    .header-content h1 {
+        left: -125px;
+        margin-bottom: 10px;
+    }
+    .git a {
+        margin: 323px -46px 0px -356px;
+    }
+    .hero__content {
+        position: absolute;
+        right: 10rem;
+    }
+    .header__socials {
+        display: none;
+    }
+}
